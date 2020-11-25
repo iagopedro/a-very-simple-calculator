@@ -63,7 +63,12 @@ sum.addEventListener('click', e => {
     
     let firstNumberValue = firstNumberInput.value;
     let secondNumberValue = secondNumberInput.value;
-    result.innerHTML = handleSum(firstNumberValue, secondNumberValue);
+    resultValue = handleSum(firstNumberValue, secondNumberValue);
+    if(isNaN(resultValue)) {
+        result.innerHTML = 0;
+    } else {
+        result.innerHTML = resultValue;
+    }
 
     form.reset();
 });
@@ -73,7 +78,12 @@ subtraction.addEventListener('click', e => {
 
     let firstNumberValue = firstNumberInput.value;
     let secondNumberValue = secondNumberInput.value;
-    result.innerHTML = handleSubtraction(firstNumberValue, secondNumberValue);
+    resultValue = handleSubtracion(firstNumberValue, secondNumberValue);
+    if(isNaN(resultValue)) {
+        result.innerHTML = 0;
+    } else {
+        result.innerHTML = resultValue;
+    }
 
     form.reset();
 });
@@ -83,7 +93,12 @@ multiplication.addEventListener('click', e => {
 
     let firstNumberValue = firstNumberInput.value;
     let secondNumberValue = secondNumberInput.value;
-    result.innerHTML = handleMultiplication(firstNumberValue, secondNumberValue);
+    resultValue = handleMultiplication(firstNumberValue, secondNumberValue);
+    if(isNaN(resultValue)) {
+        result.innerHTML = 0;
+    } else {
+        result.innerHTML = resultValue;
+    }
 
     form.reset();
 });
@@ -93,7 +108,12 @@ division.addEventListener('click', e => {
 
     let firstNumberValue = firstNumberInput.value;
     let secondNumberValue = secondNumberInput.value;
-    result.innerHTML = handleDivision(firstNumberValue, secondNumberValue);
+    resultValue = handleDivision(firstNumberValue, secondNumberValue);
+    if(isNaN(resultValue)) {
+        result.innerHTML = 0;
+    } else {
+        result.innerHTML = resultValue;
+    }
 
     form.reset();
 });
