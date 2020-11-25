@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practicing Javascript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/pastel-glyph/64/000000/calculator.png"/>
     <link rel="stylesheet" href="styles.css">
+    <title>A Very Simple Calculator</title>
 </head>
 <body>
     <div class="container">
-        <h1>A very simple Calculator...</h1>
         <form id="calculator-form">
+            <h1>A very simple calculator...</h1>
             <div class="input-group">
-                <label for="number1">Enter the first number:</label>
-                <input type="number" id="number1">
-    
-                <label for="number2">Enter the second number:</label>
-                <input type="number" id="number2">
+                <input type="number" placeholder="Enter the first number:" class="input-number" id="number1">
+                <input type="number" placeholder="Enter the second number:" class="input-number" id="number2">
             </div>
 
-            <!-- <div class="operations"> -->
-                <button type="submit" id="sum">+</button>
-                <button type="submit" id="subtraction">-</button>
-                <button type="submit" id="multiplication">*</button>
-                <button type="submit" id="division">/</button>
-                <button type="submit" id="all-clear">AC</button>
-            <!-- </div> -->
+            <div class="operations">
+                <button type="submit" class="buttons" id="sum">+</button>
+                <button type="submit" class="buttons" id="subtraction">-</button>
+                <button type="submit" class="buttons" id="multiplication">*</button>
+                <button type="submit" class="buttons" id="division">/</button>
+                <button type="submit" class="buttons" id="all-clear">AC</button>
+            </div>
             <span id='result'>0</span>
         </form>
     </div>

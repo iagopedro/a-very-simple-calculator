@@ -38,6 +38,26 @@ function handleDivision(firstNumber, secondNumber) {
     return result;
 }
 
+
+
+firstNumberInput.addEventListener('focus', () => {
+    firstNumberInput.placeholder = '';
+});
+
+firstNumberInput.addEventListener('blur', () => {
+    firstNumberInput.placeholder = 'Enter the first number:';
+});
+
+secondNumberInput.addEventListener('focus', () => {
+    secondNumberInput.placeholder = '';
+});
+
+secondNumberInput.addEventListener('blur', () => {
+    secondNumberInput.placeholder = 'Enter the first number:';
+});
+
+
+
 sum.addEventListener('click', e => {
     e.preventDefault();
     
